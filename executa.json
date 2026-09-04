@@ -1,0 +1,47 @@
+{
+  "slug": "repo-sentinel-auditor",
+  "name": "RepoSentinel Read-only Auditor",
+  "version": "1.0.0",
+  "executa_type": "tool",
+  "description": "Downloads authorized GitHub snapshots and performs bounded static security analysis without executing repository code.",
+  "tool_id": "tool-dev-repo-sentinel-ai",
+  "type": "python",
+  "enabled": true,
+  "distribution": {
+    "active": "binary",
+    "profiles": {
+      "local": {
+        "type": "local",
+        "executable_name": "tool-dev-repo-sentinel-ai",
+        "supports_protocol": true
+      },
+      "binary": {
+        "type": "binary",
+        "executable_name": "tool-dev-repo-sentinel-ai",
+        "supports_protocol": true,
+        "binary_artifacts": {
+          "darwin-arm64": {
+            "path": "dist/repo-sentinel-auditor-1.0.0-darwin-arm64.tar.gz",
+            "entrypoint": "bin/tool-dev-repo-sentinel-ai",
+            "format": "tar.gz"
+          },
+          "darwin-x86_64": {
+            "path": "dist/repo-sentinel-auditor-1.0.0-darwin-x86_64.tar.gz",
+            "entrypoint": "bin/tool-dev-repo-sentinel-ai",
+            "format": "tar.gz"
+          },
+          "linux-x86_64": {
+            "path": "dist/repo-sentinel-auditor-1.0.0-linux-x86_64.tar.gz",
+            "entrypoint": "bin/tool-dev-repo-sentinel-ai",
+            "format": "tar.gz"
+          },
+          "windows-x86_64": {
+            "path": "dist/repo-sentinel-auditor-1.0.0-windows-x86_64.zip",
+            "entrypoint": "bin/tool-dev-repo-sentinel-ai.exe",
+            "format": "zip"
+          }
+        }
+      }
+    }
+  }
+}
