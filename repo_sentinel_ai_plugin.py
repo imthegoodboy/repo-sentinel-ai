@@ -31,7 +31,7 @@ TOOL_ID = "tool-dev-repo-sentinel-ai"
 TOOL_METHOD = "repository.audit"
 STATUS_METHOD = "github.connection_status"
 REPOSITORIES_METHOD = "github.repositories"
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 MAX_ARCHIVE_BYTES = 25_000_000
 MAX_UNCOMPRESSED_BYTES = 80_000_000

@@ -25,7 +25,7 @@ def main() -> None:
     shutil.copy2(source, destination)
     if not args.platform.startswith("windows-"):
         destination.chmod(0o755)
-    base = root / "dist" / f"repo-sentinel-auditor-1.0.0-{args.platform}"
+    base = root / "dist" / f"repo-sentinel-auditor-1.0.1-{args.platform}"
     archive_format = "zip" if args.platform.startswith("windows-") else "gztar"
     archive = shutil.make_archive(str(base), archive_format, root_dir=staging)
     print(os.path.relpath(archive, root))

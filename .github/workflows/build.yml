@@ -32,5 +32,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: repo-sentinel-auditor-${{ matrix.platform }}
-          path: dist/repo-sentinel-auditor-1.0.0-*
+          path: dist/repo-sentinel-auditor-1.0.1-*
           if-no-files-found: error
